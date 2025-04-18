@@ -16,13 +16,11 @@
    source healthyai_venv/bin/activate
    pip install -r requirements.txt
    python -m spacy download ru_core_news_sm
-
 2. **Запуск Ollama (Mistral 7B)**:
     ```bash
     curl -fsSL https://ollama.com/install.sh | sh
     ollama pull mistral
     ollama serve &
-
 3. **Подготовка данных**:
 
 - Разархивируйте файлы в data/recipes_*.zip.
@@ -31,11 +29,11 @@
 
     ```bash
     python scripts/app.py --prepare-data
-    Запуск RAG и графа знаний:
+4. **Запуск RAG и графа знаний**:
 
     python config/chroma_setup.py  # Создание базы векторов
     python config/graph_builder.py # Построение графа
-    Запуск приложения:
+5. **Запуск приложения**:
 
     python scripts/app.py --query "Вегетарианская паста"
 
