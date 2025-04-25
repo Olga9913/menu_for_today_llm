@@ -1,0 +1,16 @@
+bs4
+tqdm
+langchain 
+langchain_ollama
+spacy
+networkx
+pymorphy3
+fuzzywuzzy
+transformers
+torch
+langchain_chroma
+langchain-community
+evaluate
+bert_score
+rouge_score
+nltk
